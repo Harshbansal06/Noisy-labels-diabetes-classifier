@@ -3,6 +3,13 @@
 A robust machine learning pipeline built to handle malicious data corruption, developed for the **[Summer of ML'26 - Classification Hackathon](https://www.kaggle.com/competitions/summer-of-ml-26-classification-hacakthon/overview)** hosted by The Programming Club - IIITDMJ.
 
 ---
+## 📊 Dataset Access
+To comply with the competition's data protection rules, the raw datasets are not included in this repository. 
+
+To run this project locally:
+1. Register and download the data from the official **[Summer of ML'26 Leaderboard / Data Tab](https://www.kaggle.com/competitions/summer-of-ml-26-classification-hacakthon/leaderboard)**.
+2. Place `train.csv` and `test.csv` directly into your local root directory before executing the notebooks.
+
 
 ## 🎯 Competition Overview & The Challenge
 In real-world data science, datasets are rarely pristine. The core challenge of this hackathon is to train a binary classifier that predicts whether a respondent has diabetes (`1`) or not (`0`) using a training dataset that has been **deliberately corrupted** with:
@@ -44,9 +51,7 @@ Everything is implemented entirely within a single, end-to-end Jupyter Notebook 
 
 ## 📂 Repository Structure
 ```text
-├── data/
-│   ├── train.csv                 # Corrupted training dataset (Git ignored)
-│   └── test.csv                  # Clean test dataset (Git ignored)
+
 ├── diabetes_classifier.ipynb     # Complete end-to-end pipeline (EDA, Denoising, Modeling)
 ├── submission.csv                # Generated predictions ready for Kaggle upload
 ├── .gitignore                    # Configured to ignore large CSV datasets and virtual envs
